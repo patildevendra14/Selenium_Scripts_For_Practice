@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="NetBanking">
+    <classes>
+      <class name="Pack2.ClassFive">
+      <methods><include name="ClassFive_B"/>   <!--using include only ClassFive_B Test Script will run-->
+     <!--exclude name="ClassFive_B"/-->        <!--using exclude ClassFive_B Test Script will not run, other all testscript will run except this B-->
+      </methods>                               
+      </class>
+    </classes>
+  </test> 
+</suite> 

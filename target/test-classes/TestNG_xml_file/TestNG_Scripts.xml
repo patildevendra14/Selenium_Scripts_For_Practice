@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="TestNG_Scripts.PriorityDemo"/>
+      <class name="TestNG_Scripts.GroupsDemoTest2"/>
+      <class name="TestNG_Scripts.SimpleLoginPage"/>
+      <class name="TestNG_Scripts.BeforeAfterMethod"/>
+       <class name="TestNG_Scripts.SoftAssertUse"/>
+      <class name="TestNG_Scripts.DataProviderDemoTest"/>
+      <class name="TestNG_Scripts.TestNGListener"/>
+      <class name="TestNG_Scripts.BeforeAfterClass"/>
+       <class name="TestNG_Scripts.Verify_Title"/>
+      <class name="TestNG_Scripts.Assert_Demo"/>
+      <class name="TestNG_Scripts.Demo_OmayoPage"/>
+      <class name="TestNG_Scripts.GroupsDemoTest"/>
+      <class name="TestNG_Scripts.AA_PracticeHere"/> 
+      <class name="TestNG_Scripts.SkipTestCaseException"/>
+      <class name="TestNG_Scripts.Verify_Title"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

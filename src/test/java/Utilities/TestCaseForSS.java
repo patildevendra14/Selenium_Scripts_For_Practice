@@ -1,0 +1,27 @@
+package Utilities;
+
+import java.io.File;
+import java.io.IOException;
+import java.util.Date;
+
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+
+import Common.BaseClass;
+
+public class TestCaseForSS extends BaseClass{
+	
+	public void getScreenshot() throws IOException{
+		
+		
+		Date currentdate= new Date();
+		String ssfilename= currentdate.toString().replace(" ", "-").replace(":", "-");
+		File screenshotFile=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+		FileUtils.copyFile(screenshotFile, new File(".//screenshot//"+ssfilename+".png"));
+		
+	}
+	
+
+
+}
